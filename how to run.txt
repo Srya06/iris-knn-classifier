@@ -1,0 +1,18 @@
+1. Create virtual environment
+   python -m venv .venv
+
+2. # Activate the environment
+   .venv\Scripts\activate
+
+3. # Install all required packages
+    pip install streamlit numpy pandas scikit-learn matplotlib seaborn plotly
+
+or 
+
+If pandas fails, use this instead:
+
+    pip install streamlit numpy scikit-learn matplotlib seaborn plotly
+    pip install pandas --only-binary=:all:
+
+4. # Run the Streamlit app
+    streamlit run streamlit_app.py

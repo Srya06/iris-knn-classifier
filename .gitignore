@@ -1,0 +1,47 @@
+# Create .gitignore file with proper exclusions
+@"
+# Virtual Environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.python-version
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-*
+
+# System
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Streamlit
+.streamlit/
+
+# Logs
+*.log
+
+# Temp files
+*.tmp
+*.temp
+
+# Large data files
+*.csv
+*.json
+*.pkl
+*.pickle
+"@ | Out-File -FilePath .gitignore -Encoding UTF8
